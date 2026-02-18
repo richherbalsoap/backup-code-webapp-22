@@ -1,0 +1,14 @@
+## Pages
+- [AI Insight Chatbot - EDULinker](/aichatbot): Get AI-powered insights and recommendations for school management
+- [Analytics - EDULinker](/analytics): View school performance analytics and statistics
+- [Announcement Bot - EDULinker](/announcements): Send announcements to students.
+- [Dashboard - EDULinker](/dashboard): View your school dashboard statistics and overview
+- [Dashboard - EDULinker](/home): No description available
+- [Fees Reminder - EDULinker](/feesreminder): Send fees reminders to parents
+- [Homework Sender - EDULinker](/homeworksender): Send homework assignments to students and parents
+- [Log a Complaint - EDULinker](/complaintsender): Log a complaint about a student.
+- [Login - EDULinker](/login): welcome to EDULinker System dashboard
+- [Result Sender - EDULinker](/resultsender): Manually enter or upload student marks to be sent out.
+- [Settings - EDULinker](/settings): Manage your account settings and preferences
+- [Promotion Panel - EDULinker](/promotionpanel): Filter, manage, and promote students for the new academic year
+- [Student Management - EDULinker](/studentmanagement): Manage student records
