@@ -2,10 +2,10 @@
 import path from 'node:path';
 import react from '@vitejs/plugin-react';
 import { createLogger, defineConfig } from 'vite';
-import inlineEditPlugin from './vite-plugin-react-inline-editor.js';
-import editModeDevPlugin from './vite-plugin-edit-mode.js';
-import iframeRouteRestorationPlugin from './vite-plugin-iframe-route-restoration.js';
-import selectionModePlugin from './vite-plugin-selection-mode.js';
+import inlineEditPlugin from './plugins/visual-editor/vite-plugin-react-inline-editor.js';
+import editModeDevPlugin from './plugins/visual-editor/vite-plugin-edit-mode.js';
+import iframeRouteRestorationPlugin from './plugins/vite-plugin-iframe-route-restoration.js';
+import selectionModePlugin from './plugins/selection-mode/vite-plugin-selection-mode.js';
 
 const isDev = process.env.NODE_ENV !== 'production';
 
@@ -252,13 +252,7 @@ export default defineConfig({
   resolve: {
     extensions: ['.jsx', '.js', '.tsx', '.ts', '.json', ],
     alias: {
-      '@': path.resolve(__dirname, '.'),
-      '@/components': path.resolve(__dirname, '.'),
-      '@/components/ui': path.resolve(__dirname, '.'),
-      '@/pages': path.resolve(__dirname, '.'),
-      '@/context': path.resolve(__dirname, '.'),
-      '@/store': path.resolve(__dirname, '.'),
-      '@/lib': path.resolve(__dirname, '.'),
+      '@': path.resolve(__dirname, './src'),
     },
   },
   build: {

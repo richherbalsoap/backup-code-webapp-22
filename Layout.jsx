@@ -3,7 +3,7 @@ import React, { useState, useCallback } from 'react';
 import Sidebar from './Sidebar';
 import Header from './Header';
 import { Outlet } from 'react-router-dom';
-import GoldenBackground from './GoldenBackground';
+import GoldenBackground from './ui/GoldenBackground';
 
 const Layout = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);

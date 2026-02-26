@@ -1,7 +1,10 @@
+
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import ScrollToTop from '@/components/ScrollToTop';
+import ProtectedRoute from '@/components/ProtectedRoute';
 import Layout from '@/components/Layout';
+import LoginPage from '@/pages/LoginPage';
 import DashboardPage from '@/pages/DashboardPage';
 import StudentManagementPage from '@/pages/StudentManagementPage';
 import HomeworkSenderPage from '@/pages/HomeworkSenderPage';
@@ -19,8 +22,12 @@ function App() {
     <>
       <ScrollToTop />
       <Routes>
-        <Route path="/login" element={<Navigate to="/dashboard" replace />} />
-        <Route path="/" element={<Layout />}>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={
+          <ProtectedRoute>
+            <Layout />
+          </ProtectedRoute>
+        }>
           <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="students" element={<StudentManagementPage />} />
