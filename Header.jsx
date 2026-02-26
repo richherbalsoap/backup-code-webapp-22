@@ -10,7 +10,7 @@ function Header({ toggleSidebar }) {
 
   const handleLogout = () => {
     logout();
-    navigate('/login');
+    navigate('/dashboard');
   };
 
   return (
